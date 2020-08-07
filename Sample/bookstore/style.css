@@ -1,0 +1,30 @@
+html, body {
+  font-family: arial, sans-serif;
+}
+#our-books {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div.book_wrap {
+  width: 30%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+  background: #eee;
+  border: 1px solid #ddd;
+}
+div.book_wrap:hover {
+  cursor: pointer;
+  background: #fea;
+}
+div.book_title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+div.book_desc {
+  font-size: 0.9em;
+  color: #888;
+}

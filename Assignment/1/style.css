@@ -1,0 +1,62 @@
+body{
+  background:#99ff99;
+  font-family: Optima, sans-serif;
+}
+.quote{
+  text-align: center;
+  font-style: italic;
+}
+h2{
+  color:#000;
+  text-align:center;
+}
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 10px;
+  background:#000;
+  display:inline-block;
+  color:#fff;
+  border-radius:5px 5px 1px 1px;
+  
+}
+.warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.panels{
+  background:#fffffff6;
+  min-height:200px;
+  width:100%;
+  max-width:500px;
+  border-radius:3px;
+  padding:20px;  
+}
+.panel{
+  display:none;
+  animation: fadein 1s;
+}
+a:hover {
+  background-color: yellow;
+}
+
+.panel-title{
+  font-size:1.5;
+  font-weight:bold
+}
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel{
+  display:block
+}
+#one:checked ~ .tabs #tabone,
+#two:checked ~ .tabs #tabtwo,
+#three:checked ~ .tabs #tabthree{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #000;
+}
