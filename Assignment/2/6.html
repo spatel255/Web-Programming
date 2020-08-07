@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script>
+		function check(){
+
+var username=["user1","user2","user3"];
+
+var password=["user1-111","user2-222","user3-333"]
+
+var user=document.getElementById('n1').value;
+
+var pass=document.getElementById('pass').value;
+
+var userStatus=0;
+
+var passStatus=0;
+
+for(let i=0;i<3;i++){
+
+if(username[i]==user){
+
+userStatus=1;
+
+}
+
+if(password[i]==pass && username[i]==user){
+
+passStatus=1;
+
+}
+
+}
+
+if(userStatus==0){
+
+alert("The username does not exist");
+
+}else if(passStatus==0){
+
+alert("incorrect password");
+
+}else{
+
+alert("Success");
+
+}
+
+}
+	</script>
+</head>
+
+<body>
+
+	<h1>Log in</h1>
+
+	<label>Username</label>
+
+<input type="text" id="n1"/><br/><br/>
+
+<label>Password</label>
+
+<input type="password" id="pass"/><br/><br/>
+
+<button onclick="check()">Log in</button>
+
+</body>
+</html>
