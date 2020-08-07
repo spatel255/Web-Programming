@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function printChecked() {
+	var items = document.getElementsByName('acs');
+	var selectedItems = "";
+	for(var i = 0; i < items.length; i++) {
+		if(items[i].type == 'checkbox' && items[i].checked == true) selectedItems += items[i].value + "\n";
+	}
+	alert("Items In your cart:\n" + selectedItems);
+}
+</script>
+</head>
+<body style="text-align: left;">
+	<p>Check which items you want to buy</p>
+	<br>
+	<input type="checkbox" name="acs" value="MILK">MILK
+	<br>
+	<input type="checkbox" name="acs" value="BREAD">BREAD
+	<br>
+	<input type="checkbox" name="acs" value="SODA">SODA
+	<br>
+	<input type="checkbox" name="acs" value="EGGS">EGGS
+	<br>
+	<input type="checkbox" name="acs" value="PASTA">PASTA
+	<br>
+	<p>
+		<input type="button" onclick='printChecked()' value="Check Items" /> </p>
+</body>
+</html>

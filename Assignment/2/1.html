@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1>Say hello to yourself</h1>
+	<form onsubmit="myFunction()"> Your name
+		<input type="text" id="name">
+		<br>
+		<input type="submit" value="Click me!!"> </form>
+	<script>
+	function myFunction() {
+		var name = document.getElementById("name").value;
+		alert("Hello " + name);
+	}
+	</script>
+</body>
+</html>
